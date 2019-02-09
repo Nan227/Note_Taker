@@ -1,73 +1,77 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-<title>note</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>note</title>
 </head>
+
 <body>
- 
+
   <div class="container">
 
-      <div class="jumbotron">
-        <h1 class="text-center">--- My Note ---</h1>
-      </div>
-  
-      <div class="row">
-        <div class="col-xs-12 col-sm-3">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Add new note</h3>
-              <div>
-                <div class="panel-body">
-                  <form>
-                    <div class="form-group">
-                      <label>Topic/Title</label>
-                      <!--NOTE TITLE HERE-->
-                      <input type="text" class="form-control form-field" id="note-title">
-                    </div>
-                    <div class="form-group">
-                      <label>Detail</label>
-                      <!--NOTE BODY HERE-->
-                      <input type="text" class="form-control form-field" id="note-body">
-                    </div>
-                    <button type="submit" id="submit-btn" class="btn btn-primary">Save</button>
-                     
-                  </form>
-                </div>
+    <div class="jumbotron">
+      <h1 class="text-center">Note List(s) <img src="./assets/img/post-it-note.jpg" alt="notes" width="100"></h1>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Add new note</h3>
+            <div>
+              <div class="panel-body">
+
+                <form>
+                  <div class="form-group">
+                    <label>Topic/Title</label>
+                    <!--NOTE TITLE HERE-->
+                    <input type="text" class="form-control form-field" name="title" id="note-title">
+                  </div>
+                  <div class="form-group">
+                    <label>Detail</label>
+                    <!--NOTE BODY HERE-->
+                    <input type="text" class="form-control form-field" name="body" id="note-body">
+                  </div>
+                  <button type="submit" id="submit-btn" class="btn btn-primary">Save</button>
+                </form>
+
               </div>
             </div>
           </div>
         </div>
-  
-        <div class="col-xs-12 col-sm-9">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Note(s)</h3>
-            </div>
-            <div class="panel-body">
-              <table class="table table-hover" id="notes-table">
-                <tbody id="notes-list">
-                </tbody>
-              </table>
-            </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-9">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 id="notesLocation" class="panel-title">Note(s)</h3>
+            <hr>
+
+          </div>
+          <div class="panel-body">
+            <table class="table table-hover" id="notes-table">
+              <tbody id="notes-list">
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-  
-    </div>
+  </div>
+  </div>
+  </div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<script src="assets/css/style.css"></script>
+<script src="assets/js/notes.js"></script>
 </body>
+
 </html>

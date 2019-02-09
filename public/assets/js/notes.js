@@ -1,7 +1,8 @@
-var $noteList = $("#notes-list");
 var $noteTitle = $("#note-title");
 var $noteBody = $("#note-body");
 var $submitBtn = $("#submit-btn");
+var $noteList = $("#notesLocation");
+
 
 // Gets all notes from the database, renders the notes list
 var getAndRenderNotes = function() {
@@ -17,11 +18,11 @@ var getAndRenderNotes = function() {
       var note = data[i];
       var noteListItem = `<li class="list-group-item">
       <div class="card">
-        <div class="card-body">
+        <div class="card-body id=${note.id}>
           <h4 class="card-title">${note.title}</h4>
           <p class="card-text">${note.body}</p>
-          <a href="#" class="card-link"><i class="fas fa-edit"></i></a>
-          <a href="#" class="card-link"><i class="fas fa-trash-alt"></i></a>
+          <a href="#" class="card-link"><i class="fas fa-edit noteEdit"></i></a>
+          <a href="#" class="card-link"><i class="fas fa-trash-alt noteDelete"></i></a>
         </div>
       </div>
     </li>`;
@@ -65,3 +66,15 @@ var handleNoteSubmit = function(event) {
 getAndRenderNotes();
 
 $submitBtn.on("click", handleNoteSubmit);
+
+$(document).on("click", ".noteDelete", function () {
+  const DBid = $(this).parent().attr("id");
+
+  $.ajax({
+    url: `/api/notes/${DBid}`,
+    method: "DELETE"
+  })
+  .then(function (response) {
+    location.reload();
+  })
+})

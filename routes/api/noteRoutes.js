@@ -23,6 +23,12 @@ router.put("/:id", function (req, res) {
 
 router.delete("/:id", function (req, res) {
   // DELETE from database where id = req.params.id
+  const queryDB = "DELETE FROM notes WHERE id = ?";
+ 
+  db.query(queryDB, req.params.id, function (err, results) {
+    if(err) throw err;
+    console.log(results);
+  })
 });
 
 module.exports = router;

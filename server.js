@@ -13,4 +13,4 @@ app.use(express.static("public"));
 // set up routes
 app.use(routes);
 
-app.listen(PORT, () => console.log(`🐶 => You're on ${PORT}`));
+app.listen(PORT, () => console.log(`🐶 => You're on http://localhost:${PORT}`));
