@@ -1,12 +1,20 @@
 const router = require("express").Router();
 const db = require("../../config/connection");
 
-router.get("/", function (req, res) {
-  // query database for all notes and send back as json
+router.get("/", function(req, res) {
+  db.query("SELECT * FROM notes ORDER BY id DESC", function(err, dbNotes) {
+    if (err) throw err;
+
+    res.json(dbNotes);
+  });
 });
 
-router.post("/", function (req, res) {
-  // INSERT into database the data coming from req.body
+router.post("/", function(req, res) {
+  db.query("INSERT INTO notes SET ?", [req.body], function(err, result) {
+    if (err) throw err;
+
+    res.json(result);
+  });
 });
 
 router.put("/:id", function (req, res) {
