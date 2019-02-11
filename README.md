@@ -10,11 +10,11 @@ After run ```nodemon server.js ``` then it will display homepage screen follow t
 <img src = "./public/img/liriapp.png">
 click `start` button then it will display next page called `note.html` follow picture below.
 
-![](img/screenShot2.png)
+![](public/assets/img/screenShot2.png)
 
 The app will update link to mySQL in the server follow picture below.
 
-![](img/screenShot3.png)
+![](public/assets/img/screenShot3.png)
 
 # Link to webpage
 
