@@ -4,6 +4,9 @@ In application, user can create a node and delete it form page. This app use Exp
 
 # Screenshort
 
+# see more details on Youtube
+https://youtu.be/c1QXQlRGxp8
+
 # Link to webpage
 
 https://nan227.github.io/Note_Taker/
