@@ -6,7 +6,7 @@ In application, user can create a node and delete it form page. This app use Exp
 
 After run ```nodemon server.js ``` then it will display homepage screen follow this picture below.
 
-![](img/screenShot1)
+![](public/assets/img/screenShot1)
 
 click `start` button then it will display next page called `note.html` follow picture below.
 
