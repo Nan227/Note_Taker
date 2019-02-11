@@ -4,13 +4,25 @@ In application, user can create a node and delete it form page. This app use Exp
 
 # Screenshort
 
-# see more details on Youtube
-https://youtu.be/c1QXQlRGxp8
+After run ```nodemon server.js ``` then it will display homepage screen follow this picture below.
+
+![](img/screenShot1)
+
+click `start` button then it will display next page called `note.html` follow picture below.
+
+![](img/screenShot2)
+
+The app will update link to mySQL in the server follow picture below.
+
+![](img/screenShot3)
 
 # Link to webpage
 
-https://nan227.github.io/Note_Taker/
+https://nan227.github.io/Note_Taker/public/home.html
 
 
+# Video
+
+[![Watch the video](https://img.youtube.com/vi/c1QXQlRGxp8/default.jpg)](https://youtu.be/c1QXQlRGxp8)
 
 
