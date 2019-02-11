@@ -7,7 +7,7 @@ In application, user can create a node and delete it form page. This app use Exp
 After run ```nodemon server.js ``` then it will display homepage screen follow this picture below.
 
 ![](public/assets/img/screenShot1.png)
-<img src = "./public/img/liriapp.png">
+
 click `start` button then it will display next page called `note.html` follow picture below.
 
 ![](public/assets/img/screenShot2.png)
