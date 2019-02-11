@@ -26,5 +26,5 @@ https://nan227.github.io/Note_Taker/public/home.html
 [![Watch the video](https://img.youtube.com/vi/c1QXQlRGxp8/default.jpg)](https://youtu.be/c1QXQlRGxp8)
 
 
-test
+
 
