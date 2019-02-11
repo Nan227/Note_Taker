@@ -19,16 +19,23 @@ router.post("/", function(req, res) {
 
 router.put("/:id", function (req, res) {
   // UPDATE database setting req.body WHERE id = req.params.id
+  db.query("UPDATE notes SET ? WHERE id = ?", [req.body, req.params.id], function(err, result) {
+    if (err) throw err;
+
+    res.json(result);
+  });
 });
+
 
 router.delete("/:id", function (req, res) {
   // DELETE from database where id = req.params.id
   const queryDB = "DELETE FROM notes WHERE id = ?";
  
-  db.query(queryDB, req.params.id, function (err, results) {
+  db.query(queryDB, [req.body, req.params.id], function (err, result) {
     if(err) throw err;
-    console.log(results);
+    res.json(result);
   })
 });
+
 
 module.exports = router;
