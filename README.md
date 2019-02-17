@@ -18,7 +18,7 @@ The app will update link to mySQL in the server follow picture below.
 
 # Link to webpage
 
-https://nan227.github.io/Note_Taker/public/home.html
+https://notetk.herokuapp.com/
 
 
 # Video
